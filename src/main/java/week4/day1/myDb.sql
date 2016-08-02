@@ -31,21 +31,13 @@ INSERT INTO Teacher VALUES (3, 'Casper', 'deGhost', 170, 1.99);
 
 INSERT INTO Class VALUES  (1, 'Math', 'Calculus', 1);
 INSERT INTO Class VALUES  (2, 'Science', 'BioAlgorithms', 1);
-INSERT INTO Class VALUES  (3, 'English', 'English Literature', 2);
-INSERT INTO Class VALUES  (4, 'English', 'Composition', 2);
-INSERT INTO Class VALUES  (5, 'Art', 'Classic', 3);
-INSERT INTO Class VALUES  (6, 'Art', 'Modern', 4);
+INSERT INTO Class VALUES  (3, 'English', 'English Literature', 2),(4, 'English', 'Composition', 2), (5, 'Art', 'Classic', 3), (6, 'Art', 'Modern', 4);
 
 INSERT INTO Student VALUES  (1, 'Andy', 'McFly', 3.667, 3.5);
 INSERT INTO Student VALUES  (2, 'Bob', 'Jones', 3.333, 3.1);
 INSERT INTO Student VALUES  (3, 'Lisa', 'Marie', 2, 3.5);
 INSERT INTO Student VALUES  (4, 'Carletta', 'Eastman', 4, 3.5);
-INSERT INTO Student VALUES  (5, 'Travis', 'Coleman', 4, 3.5);
-INSERT INTO Student VALUES  (6, 'Roberto', 'Samone', 3.333, 3.5);
-INSERT INTO Student VALUES  (7, 'Rich', 'Boye', 2, 3.5);
-INSERT INTO Student VALUES  (8, 'Debbie', 'Donning', 3.333, 3.5);
-INSERT INTO Student VALUES  (9, 'Frank', 'Mirr', 1.667, 3.5);
-INSERT INTO Student VALUES  (10, 'Petra', 'Zolanski', 3.677, 3.5);
+INSERT INTO Student VALUES  (5, 'Travis', 'Coleman', 4, 3.5),(6, 'Roberto', 'Samone', 3.333, 3.5),(7, 'Rich', 'Boye', 2, 3.5), (8, 'Debbie', 'Donning', 3.333, 3.5), (9, 'Frank', 'Mirr', 1.667, 3.5),  (10, 'Petra', 'Zolanski', 3.677, 3.5);
 
 INSERT INTO ClassStudent VALUES (1, 1, 1);
 INSERT INTO ClassStudent VALUES (2, 5, 1);
@@ -63,15 +55,8 @@ INSERT INTO ClassStudent VALUES (13, 3, 5);
 INSERT INTO ClassStudent VALUES (14, 5, 5);
 INSERT INTO ClassStudent VALUES (15, 2, 5);
 INSERT INTO ClassStudent VALUES (16, 6, 6);
-INSERT INTO ClassStudent VALUES (17, 1, 6);
-INSERT INTO ClassStudent VALUES (18, 4, 7);
-INSERT INTO ClassStudent VALUES (19, 5, 7);
-INSERT INTO ClassStudent VALUES (20, 1, 8);
-INSERT INTO ClassStudent VALUES (21, 2, 8);
-INSERT INTO ClassStudent VALUES (22, 4, 9);
-INSERT INTO ClassStudent VALUES (23, 3, 9);
-INSERT INTO ClassStudent VALUES (24, 5, 10);
-INSERT INTO ClassStudent VALUES (25, 6, 10);
+INSERT INTO ClassStudent VALUES (17, 1, 6),(18, 4, 7),(19, 5, 7),(20, 1, 8), (21, 2, 8), (22, 4, 9),(23, 3, 9),(24, 5, 10),
+(25, 6, 10);
 
 SELECT * FROM Teacher;
 SELECT * FROM Class;
