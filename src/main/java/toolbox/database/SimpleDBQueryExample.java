@@ -20,16 +20,16 @@ public class SimpleDBQueryExample {
 
             //STEP 2: Open a connection
             System.out.println("Connecting to database...");
-            conn = DriverManager.getConnection(DB_URL,USER,PASS);
+            conn = DriverManager.getConnection(DB_URL,USER,PASS); //setting the value of conn...by giving it the value of db_url, user, pass
 
             //STEP 3: Execute a query
             stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT id, str_col, num_col FROM sample_table");
 
             //STEP 4: Extract data from result set
-            while(rs.next()) {
+            while(rs.next()) {                                  //will keep looping as long as there is a result in the table?
                 //Retrieve by column name
-                int id  = rs.getInt("id");
+                int id  = rs.getInt("id");              //give me int id and pass it to rs.getInt("id")
                 String str_col = rs.getString("str_col");
                 int num_col = rs.getInt("num_col");
 
@@ -44,10 +44,10 @@ public class SimpleDBQueryExample {
             stmt.close();
             conn.close();
         } catch(Exception e) {
-            e.printStackTrace();
-        } finally {
+            e.printStackTrace();                    //if there is an error...shut it down and dont do any more applications
+        } finally {                                 //end of a try catch...no matter what happens...do this at the end
             try {
-                if(stmt!=null)
+                if(stmt!=null)                      //close global variables
                     stmt.close();
             } catch(SQLException sqle) {
                 sqle.printStackTrace();
