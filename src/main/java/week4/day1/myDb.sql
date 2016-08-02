@@ -29,17 +29,17 @@ INSERT INTO Teacher (TeacherID, FirstName, LastName, Age, Salary)
 INSERT INTO Teacher VALUES (2, 'Anna', 'Bobanna', 70, 69000.99);
 INSERT INTO Teacher VALUES (3, 'Casper', 'deGhost', 170, 1.99);
 
-INSERT INTO Class VALUES  (1, 'Math', 'Calculus', 1);
+INSERT INTO Class (ClassID, Name, Description, TeacherID) VALUES  (1, 'Math', 'Calculus', 1);
 INSERT INTO Class VALUES  (2, 'Science', 'BioAlgorithms', 1);
 INSERT INTO Class VALUES  (3, 'English', 'English Literature', 2),(4, 'English', 'Composition', 2), (5, 'Art', 'Classic', 3), (6, 'Art', 'Modern', 4);
 
-INSERT INTO Student VALUES  (1, 'Andy', 'McFly', 3.667, 3.5);
+INSERT INTO Student (StudentID, FirstName, LastName, Grade, GPA) VALUES  (1, 'Andy', 'McFly', 3.667, 3.5);
 INSERT INTO Student VALUES  (2, 'Bob', 'Jones', 3.333, 3.1);
 INSERT INTO Student VALUES  (3, 'Lisa', 'Marie', 2, 3.5);
 INSERT INTO Student VALUES  (4, 'Carletta', 'Eastman', 4, 3.5);
 INSERT INTO Student VALUES  (5, 'Travis', 'Coleman', 4, 3.5),(6, 'Roberto', 'Samone', 3.333, 3.5),(7, 'Rich', 'Boye', 2, 3.5), (8, 'Debbie', 'Donning', 3.333, 3.5), (9, 'Frank', 'Mirr', 1.667, 3.5),  (10, 'Petra', 'Zolanski', 3.677, 3.5);
 
-INSERT INTO ClassStudent VALUES (1, 1, 1);
+INSERT INTO ClassStudent (ClassStudentID, ClassID, StudentID) VALUES (1, 1, 1);
 INSERT INTO ClassStudent VALUES (2, 5, 1);
 INSERT INTO ClassStudent VALUES (3, 6, 1);
 INSERT INTO ClassStudent VALUES (4, 2, 2);
