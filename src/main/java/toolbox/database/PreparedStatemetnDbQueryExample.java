@@ -13,7 +13,7 @@ public class PreparedStatemetnDbQueryExample {
 
     public static void main(String[] args) {
         Connection conn = null;
-        PreparedStatement stmt = null;
+        PreparedStatement stmt = null;                      //secure statment different from other database examples
         try {
             //STEP 1: Register JDBC driver
             Class.forName(JDBC_DRIVER);
@@ -23,8 +23,8 @@ public class PreparedStatemetnDbQueryExample {
             conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
             //STEP 3: Execute a query
-            stmt = conn.prepareStatement("SELECT id, str_col, num_col FROM sample_table WHERE num_col < ?");
-            stmt.setInt(1,250);
+            stmt = conn.prepareStatement("SELECT id, str_col, num_col FROM sample_table WHERE num_col < ?"); //need to know how to set a prepareStatment ...eliminate sql injection and speed up sql
+            stmt.setInt(1,250);                                                         //initial value that was set and replace the ? from above line
             ResultSet rs = stmt.executeQuery();
 
             //STEP 4: Extract data from result set
@@ -45,11 +45,11 @@ public class PreparedStatemetnDbQueryExample {
             stmt.close();
             conn.close();
 
-        //} catch (ClassNotFoundException cnfe){        //todo look up take out Exception e...class was not found when we deleted exception e
-        //    cnfe.printStackTrace(); }
-
         } catch(SQLException se) {
             se.printStackTrace();
+            //todo change exception e
+
+
         } catch(Exception e) {
             e.printStackTrace();
         } finally {
