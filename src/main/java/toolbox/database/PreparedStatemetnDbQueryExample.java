@@ -48,10 +48,11 @@ public class PreparedStatemetnDbQueryExample {
         } catch(SQLException se) {
             se.printStackTrace();
             //todo change exception e
-
-
-        } catch(Exception e) {
-            e.printStackTrace();
+        }  catch(ClassNotFoundException cnfe) {
+            cnfe.printStackTrace();
+//
+//        } catch(Exception e) {
+//            e.printStackTrace();
         } finally {
             try {
                 if(stmt!=null)

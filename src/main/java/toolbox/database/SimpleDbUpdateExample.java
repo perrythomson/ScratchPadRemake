@@ -34,10 +34,9 @@ public class SimpleDbUpdateExample {
             conn.close();
         } catch(SQLException se) {
             se.printStackTrace();
-
-
-            //} catch (ClassNotFoundException cnfe){        //todo look up take out Exception e...class was not found when we deleted exception e
-            //    cnfe.printStackTrace(); }
+//        } catch (ClassNotFoundException cnfe){        //todo look up take out Exception e...class was not found when we deleted exception e
+//            cnfe.printStackTrace();
+//        }
 
 
         } catch(Exception e) {
