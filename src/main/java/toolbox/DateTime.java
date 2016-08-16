@@ -7,6 +7,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import java.util.TimeZone;
 
 import static java.time.temporal.ChronoUnit.YEARS;
@@ -14,6 +15,34 @@ import static java.time.temporal.ChronoUnit.YEARS;
 public class DateTime {
 
     public static void main(String[] args) {
+
+
+        getCurrentDate();
+        getCurrentDateTime();
+        getCurrentDayMonthYear();
+        getSpecificDate(2008, 8, 02);
+        isSameDates(2008, 8, 02);
+        isAnniversary(2008, 8, 02);
+        getCurrentTime();
+        addHours(24);
+        addWeeks(4);
+        subtractYears(2);
+        getCurrentUTCClock();
+        getCurrentLocalClock();
+        isDateBefore(getCurrentDate(), getSpecificDate(2008,8,2));
+        isDateAfter(getCurrentDate(), getSpecificDate(2008,8,2));
+        isDateBetween(getSpecificDate(2008,8,2), getCurrentDate(), getSpecificDate(2009,8,2));
+        daysBetweenDates(getSpecificDate(2008,8,2), getCurrentDate());
+        printAllTimeZones();
+        getCurrentZonedDateTime("MDT");
+        howManyDaysInAMonth(2008, 8);
+        isLeapYear(2016);
+        defaultFormatting("20080802");
+        customFormatting("Aug022008");
+        dateToPrettyString(getCurrentDateTime());
+
+
+
 
     }
 
@@ -38,6 +67,13 @@ public class DateTime {
     }
 
     private static LocalDate getSpecificDate(int year, int month, int day) {
+        /**
+         * This method is used to add three integers. T
+         * @param int year This is the first parameter
+         * @param int month This is the second parameter
+         * @param int day This is the third parameter
+         * @return int This returns concatenation of specificDate.
+         */
         LocalDate specificDate = LocalDate.of(year, month, day);
         System.out.println("Your Date of birth is : " + specificDate);
         return specificDate;
@@ -100,13 +136,13 @@ public class DateTime {
         return newDate;
     }
 
-    private static Clock getCurrnetUTCClock() {
+    private static Clock getCurrentUTCClock() {
         Clock clock = Clock.systemUTC();
         System.out.println("UTC Clock : " + clock);
         return clock;
     }
 
-    private static Clock getCurrnetLocalClock() {
+    private static Clock getCurrentLocalClock() {
         Clock clock = Clock.systemDefaultZone();
         System.out.println("Local Time Zone Clock : " + clock);
         return clock;
