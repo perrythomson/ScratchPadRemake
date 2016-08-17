@@ -1,4 +1,4 @@
-package main.java.toolbox.collection;
+package toolbox.collection;
 
 /**
  * Created by perrythomson on 7/28/16.

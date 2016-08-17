@@ -1,4 +1,5 @@
-package main.java.toolbox.collection;
+package toolbox.collection;
+
 
 import java.util.ArrayList;
 
