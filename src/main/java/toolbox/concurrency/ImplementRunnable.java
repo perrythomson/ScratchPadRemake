@@ -1,4 +1,4 @@
-package main.java.toolbox.concurrency;
+package toolbox.concurrency;
 
 /**
  * Created by perrythomson on 7/28/16.
@@ -21,7 +21,9 @@ public class ImplementRunnable {
     }
 }
 
-class MyRunnableThread implements Runnable {
+class MyRunnableThread implements Runnable {  //inner class declared inside a file named something different...
+                                              // becomes a class is only visable/access to that class
+                                              //this is a child thread which has to be accessed through parent
 
     public static int myCount = 0;
     public MyRunnableThread() { }

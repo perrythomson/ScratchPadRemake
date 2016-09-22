@@ -68,7 +68,7 @@ public class Switches {
         System.out.println("Number of day: "+numDays);
     }
 
-    // The same thing, but using Strings instrad of ints. Requires Java 7 or greater
+    // The same thing, but using Strings instead of ints. Requires Java 7 or greater
     public void stringSwitch(String dayOfWeek) {
         String typeOfDay ="";
         switch(dayOfWeek) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="962793898">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="HSQLDB (Local) -" uuid="01ecaaa5-cd6a-4e0e-a42b-7585636db1a0">
       <driver-ref>hsqldb.local</driver-ref>
       <synchronize>true</synchronize>

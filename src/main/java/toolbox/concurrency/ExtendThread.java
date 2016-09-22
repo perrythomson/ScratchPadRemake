@@ -1,4 +1,4 @@
-package main.java.toolbox.concurrency;
+package toolbox.concurrency;
 
 /**
  * Created by perrythomson on 7/28/16.

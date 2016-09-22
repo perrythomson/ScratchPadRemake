@@ -10,9 +10,6 @@ public class Day2FixNSwitchStatement {
         switchIt();
     }
 
-
-
-
     private static String switchIt() {
         String yearString = "";
         String branchString = "";
@@ -53,12 +50,9 @@ public class Day2FixNSwitchStatement {
                         break;
                 }
                 return branchString;
-
-        default: yearString = "Invalid.";
-        break;
-
+                default: yearString = "Invalid.";
+                break;
         }
-
         return yearString;
     }
 }

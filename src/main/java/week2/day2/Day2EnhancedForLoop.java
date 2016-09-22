@@ -24,7 +24,7 @@ public class Day2EnhancedForLoop {
         }
     }
 
-    public static void enhancedForLoop(char [] letters) {
+    public static void enhancedForLoop(char[] letters) {
         for(char letter : letters ){
             System.out.println(letter);
         }
